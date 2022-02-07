@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+    <style>
+        .content{
+            display: flex;
+            justify-content: space-around;
+            border: solid black 1px;
+            text-align: center;
+        }
+        div.skill{
+            display: flex;
+            justify-content: space-around;
+            width: 75PX;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        h1{
+            margin-top: 25px;
+            text-align: center;
+            margin-left: 25px
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+
+        <h1>Les Habilites de nos different participant</h1>
+        
+            {{#each students}}
+            <div class="content">
+                <h1>{{this.name}}</h1>
+               {{#each this.skill}}
+                  <div class= "skill">
+                      {{this}}
+                  </div>
+               {{/each}}
+               </div>
+            {{/each}} 
+            {{tudents.name}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            border: 2px solid white;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            margin: 25px;
+        }
+
+        .nav-bar li{
+            list-style: none;
+        }
+
+        .nav-bar li a, .logo{
+            margin: 35px;
+            text-decoration: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .logo:hover a:hover{
+            text-decoration: underline;
+        }
+        .logo{
+            display: flex;
+            justify-content: flex-start;
+            position: absolute;
+            padding: 10px;
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <strong class="logo">ST</strong>
+        <ul class="nav-bar">
+            <li> <a href="/">Home</a> </li>
+            <li> <a href="/about">Contact-us</a> </li>
+        </ul>
+    </nav>
+    {{{body}}}
+</body>
+</html>
